@@ -8,10 +8,12 @@
 #ifndef _TFT_eSPI_RP2040H_
 #define _TFT_eSPI_RP2040H_
 
+#include "Arduino/Arduino.h"
+
 #ifndef ARDUINO_ARCH_MBED
-  #include <LittleFS.h>
-  #define FONT_FS_AVAILABLE
-  #define SPIFFS LittleFS
+  //#include <LittleFS.h>
+  //#define FONT_FS_AVAILABLE
+  //#define SPIFFS LittleFS
 #endif
 
 // Required for both the official and community board packages

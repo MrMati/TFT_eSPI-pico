@@ -24,7 +24,7 @@
 
 // Only ONE line below should be uncommented to define your setup.  Add extra lines and files as needed.
 
-#include <User_Setup.h>           // Default setup is root library folder
+//#include <User_Setup.h>           // Default setup is root library folder
 
 //#include <User_Setups/Setup1_ILI9341.h>  // Setup file for ESP8266 configured for my ILI9341
 //#include <User_Setups/Setup2_ST7735.h>   // Setup file for ESP8266 configured for my ST7735
@@ -156,6 +156,8 @@
 //#include <User_Setups/Dustin_STT7789_ESP32.h>    // Setup file for Dustin Watts PCB with ST7789 240 x 240 on 3.3V adapter board
 //#include <User_Setups/Dustin_ILI9341_ESP32.h>    // Setup file for Dustin Watts PCB with ILI9341
 //#include <User_Setups/ILI9225.h>
+
+#include <User_Setups/Setup555_BLu.h>
 
 #endif // USER_SETUP_LOADED
 

@@ -16,6 +16,9 @@
 #ifndef _TFT_eSPIH_
 #define _TFT_eSPIH_
 
+#include "Arduino/Arduino.h"
+
+
 #define TFT_ESPI_VERSION "2.5.43"
 
 // Bit level feature flags
@@ -27,11 +30,7 @@
 ***************************************************************************************/
 
 //Standard support
-#include <Arduino.h>
-#include <Print.h>
-#if !defined (TFT_PARALLEL_8_BIT) && !defined (RP2040_PIO_INTERFACE)
-  #include <SPI.h>
-#endif
+
 /***************************************************************************************
 **                         Section 2: Load library and processor specific header files
 ***************************************************************************************/
@@ -970,7 +969,7 @@ class TFT_eSPI : public Print { friend class TFT_eSprite; // Sprite class has ac
   #endif
 #else
     #if !defined(DISABLE_ALL_LIBRARY_WARNINGS)
-      #warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
+      //#warning >>>>------>> TOUCH_CS pin not defined, TFT_eSPI touch functions will not be available!
     #endif
 #endif
 
